@@ -1,0 +1,82 @@
+Metadata-Version: 2.4
+Name: emotionless_options
+Version: 0.1.0
+Summary: An AI-powered options trading predictor
+Home-page: https://github.com/yourusername/emotionless_options
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yfinance==0.2.36
+Requires-Dist: pandas==2.2.0
+Requires-Dist: numpy==1.26.3
+Requires-Dist: requests==2.31.0
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: tweepy==4.14.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: scikit-learn==1.4.0
+Requires-Dist: nltk==3.8.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Emotionless Options Predictor
+
+An AI-powered options trading predictor that combines quantitative data with sentiment analysis to make data-driven trading decisions.
+
+## Features
+
+- Real-time options data scraping (Greeks, prices, etc.)
+- Social media sentiment analysis
+- News sentiment analysis
+- Machine learning-based prediction models
+- Historical data analysis
+
+## Project Structure
+
+```
+emotionless_options/
+├── data/
+│   ├── raw/                 # Raw scraped data
+│   └── processed/           # Processed data for analysis
+├── src/
+│   ├── scrapers/           # Data scraping modules
+│   ├── sentiment/          # Sentiment analysis modules
+│   ├── analysis/           # Data analysis and prediction
+│   └── utils/              # Utility functions
+├── config/                 # Configuration files
+└── tests/                  # Unit tests
+```
+
+## Setup
+
+1. Clone the repository
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Set up environment variables in `.env` file
+
+## Usage
+
+[To be added as development progresses]
+
+## License
+
+MIT License

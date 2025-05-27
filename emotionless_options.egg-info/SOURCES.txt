@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+emotionless_options/__init__.py
+emotionless_options.egg-info/PKG-INFO
+emotionless_options.egg-info/SOURCES.txt
+emotionless_options.egg-info/dependency_links.txt
+emotionless_options.egg-info/requires.txt
+emotionless_options.egg-info/top_level.txt
+emotionless_options/src/__init__.py
+emotionless_options/src/analysis/__init__.py
+emotionless_options/src/examples/__init__.py
+emotionless_options/src/examples/options_example.py
+emotionless_options/src/scrapers/__init__.py
+emotionless_options/src/scrapers/options_scraper.py
+emotionless_options/src/sentiment/__init__.py
+emotionless_options/src/utils/__init__.py
