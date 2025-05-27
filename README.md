@@ -14,16 +14,33 @@ An AI-powered options trading predictor that combines quantitative data with sen
 
 ```
 emotionless_options/
-├── data/
-│   ├── raw/                 # Raw scraped data
-│   └── processed/           # Processed data for analysis
-├── src/
-│   ├── scrapers/           # Data scraping modules
-│   ├── sentiment/          # Sentiment analysis modules
-│   ├── analysis/           # Data analysis and prediction
-│   └── utils/              # Utility functions
 ├── config/                 # Configuration files
-└── tests/                  # Unit tests
+│   ├── logging.yaml       # Logging configuration
+│   └── settings.yaml      # Application settings
+├── data/                  # Data storage
+│   ├── raw/              # Raw scraped data
+│   ├── processed/        # Processed data
+│   └── models/           # Trained models
+├── src/                   # Source code
+│   ├── analysis/         # Analysis modules
+│   │   ├── strategy_advisor.py
+│   │   └── risk_metrics.py
+│   ├── scrapers/         # Data scraping modules
+│   │   ├── options_scraper.py
+│   │   └── market_data.py
+│   ├── sentiment/        # Sentiment analysis
+│   │   ├── news_analyzer.py
+│   │   └── social_analyzer.py
+│   ├── utils/            # Utility functions
+│   │   ├── validation.py
+│   │   └── logging.py
+│   └── examples/         # Example scripts
+├── tests/                # Test suite
+│   ├── unit/            # Unit tests
+│   └── integration/     # Integration tests
+└── docs/                # Documentation
+    ├── api/            # API documentation
+    └── guides/         # User guides
 ```
 
 ## Setup
