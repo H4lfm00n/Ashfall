@@ -1,0 +1,64 @@
+# Application Settings
+
+# Data Scraping Settings
+scraping:
+  max_retries: 3
+  retry_delay: 2  # seconds
+  cache_duration: 300  # seconds
+  request_timeout: 30  # seconds
+  user_agent: "EmotionlessOptions/1.0"
+
+# Options Analysis Settings
+options:
+  min_days_to_expiry: 1
+  max_days_to_expiry: 365
+  min_iv: 0.05
+  max_iv: 5.0
+  min_strike: 0.1
+  max_strike: 1000000.0
+  risk_free_rate: 0.05
+  default_volatility: 0.3
+
+# Risk Management Settings
+risk:
+  max_position_size: 0.1  # 10% of portfolio
+  max_loss_per_trade: 0.02  # 2% of portfolio
+  min_probability_of_profit: 0.6  # 60%
+  max_vega_exposure: 1000
+  max_theta_exposure: -1000
+
+# Strategy Settings
+strategy:
+  min_delta: 0.3
+  max_delta: 0.7
+  min_gamma: 0.01
+  max_gamma: 0.1
+  min_theta: -100
+  max_theta: 0
+  min_vega: 0
+  max_vega: 1000
+
+# Sentiment Analysis Settings
+sentiment:
+  news_weight: 0.4
+  social_weight: 0.3
+  technical_weight: 0.3
+  min_confidence: 0.6
+  update_interval: 3600  # seconds
+
+# Data Storage Settings
+storage:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  models_dir: "data/models"
+  logs_dir: "data/logs"
+  backup_interval: 86400  # seconds
+
+# API Settings
+api:
+  enabled: false
+  host: "localhost"
+  port: 8000
+  debug: false
+  cors_origins: ["*"]
+  rate_limit: 100  # requests per minute 
