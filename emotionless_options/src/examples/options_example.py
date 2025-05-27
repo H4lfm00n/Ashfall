@@ -1,5 +1,6 @@
 import sys
 import os
+import traceback
 
 # Add the project root directory to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -40,7 +41,9 @@ def main():
         print(historical_data.head())
         
     except Exception as e:
-        print(f"Error: {str(e)}")
+        print(f"\nError: {str(e)}")
+        print("\nDetailed error information:")
+        traceback.print_exc()
 
 if __name__ == "__main__":
     main() 
