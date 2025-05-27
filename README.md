@@ -1,7 +1,6 @@
 # Emotionless Options Predictor
 
-An AI-powered options trading predictor that combines quantitative data with sentiment analysis to make data-driven trading decisions.
-
+Machine Learning model to extract and process raw market data using custom scrapers, apply sentiment-neutral analysis via Natural Language Processing (NLP), and execute autonomous, emotionless decision-making for alpha generation.
 ## Features
 
 - Real-time options data scraping (Greeks, prices, etc.)
